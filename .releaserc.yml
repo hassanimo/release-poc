@@ -13,5 +13,5 @@ plugins:
 #    - successCmd: |
 #        echo NEXT_RELEASE_VERSION=${nextRelease.version} > release.env &&
 #        echo LAST_RELEASE_VERSION=${lastRelease.version} >> release.env
-  - - "@semantic-release/git"
+  - - "@semantic-release/github"
     - assets: "docs/CHANGELOG.md"
