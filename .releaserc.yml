@@ -9,9 +9,10 @@ plugins:
   - "@semantic-release/release-notes-generator"
   - - "@semantic-release/changelog"
     - changelogFile: "docs/CHANGELOG.md"
-#  - - "@semantic-release/exec"
-#    - successCmd: |
-#        echo NEXT_RELEASE_VERSION=${nextRelease.version} > release.env &&
-#        echo LAST_RELEASE_VERSION=${lastRelease.version} >> release.env
+  - - "@semantic-release/exec"
+    - successCmd: |
+        echo NEXT_RELEASE_VERSION=${nextRelease.version} > release.env &&
+        echo LAST_RELEASE_VERSION=${lastRelease.version} >> release.env
   - - "@semantic-release/github"
     - assets: "docs/CHANGELOG.md"
+      draftRelease : false
