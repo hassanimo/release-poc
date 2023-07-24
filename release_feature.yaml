@@ -1,0 +1,13 @@
+branches:
+  - main
+  - name: "feature/DATA-+([0-9])?"
+    prerelease: "${_.replace(name, 'feature/', '')}"
+tagFormat: "${version}"
+repositoryUrl: "https://github.com/hassanimo/release-poc.git"
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - - "@semantic-release/exec"
+    - successCmd: |
+        echo NEXT_RELEASE_VERSION=${nextRelease.version} > release.env &&
+        echo LAST_RELEASE_VERSION=${lastRelease.version} >> release.env
