@@ -15,4 +15,4 @@ plugins:
 #        echo LAST_RELEASE_VERSION=${lastRelease.version} >> release.env
   - - "@semantic-release/github"
     - assets: "docs/CHANGELOG.md"
-      draftRelease : true
+      draftRelease : false
