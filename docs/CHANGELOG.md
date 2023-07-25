@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/hassanimo/release-poc/compare/1.3.0...1.4.0) (2023-07-25)
+
+
+### Features
+
+* release template ([40bf157](https://github.com/hassanimo/release-poc/commit/40bf157df99a5ec2f222125dd6da0f649486ee2a))
+
 # [1.3.0](https://github.com/hassanimo/release-poc/compare/1.2.1...1.3.0) (2023-07-25)
 
 
